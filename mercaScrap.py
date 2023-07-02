@@ -172,7 +172,7 @@ def scraping(nombre_producto,n_productos,envio,v_max,v_min):
 
         #DATOS PRINCIPALES DE LA PUBICACION
         titulo = producto.find('h2',{'class':'ui-search-item__title'})
-        precio = producto.find('span',{'class':'price-tag-fraction'})
+        precio = producto.find('span',{'class':'andes-money-amount__fraction'})
 
         #POSIBLE ERROR EN ALGUNAS CATEGORIAS O PUBLICACIONES
         try:
