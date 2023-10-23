@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
-#By: AstrumStorm
+#By: NeuDam
 
 import os
 import time
@@ -158,7 +158,7 @@ def scraping(nombre_producto,n_productos,envio,v_max,v_min):
     soup = BeautifulSoup(r.text,'html.parser')
 
     #DIVIDIR LOS PRODUCTOS EN SUS DIV PARA LUEGO DESMENUZARLOS (PRECIO , TITULO, ETC)
-    productos_div = soup.find_all('div',{'class':'shops__cardStyles'})
+    productos_div = soup.find_all('div',{'class':'ui-search-result__wrapper'})
 
     i = 0
 
